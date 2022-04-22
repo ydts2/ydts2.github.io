@@ -1,0 +1,110 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+/* html {
+    background-color: beige;
+    margin: 0;
+} */
+
+/* body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    /* justify-content: flex-end;
+    align-items: center; */
+    background-color: #c60b4b;
+}
+
+body {
+    background-color: #ffd92b;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quote-input, .quote-display {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login:hover {
+    color: ffd92b;
+    background-color: c60b4b;
+    border-color: black;
+}
+
+.container{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    justify-items: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem+2px);
+    margin-right: calc(-1rem+2px);
+}
+.quote-input{
+    background-color: transparent;
+    border: 2px solid #ffd92b;
+    outline: none;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.quote-input:focus {
+    border-color: black;
+}
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+.logo-img {
+    height: 70px;
+    width: 210px;
+}
+
+logo-container {
+    flex: 4;
+}
+
+.quote-container {
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.login-container {
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex: 7;
+}
+
+.btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
