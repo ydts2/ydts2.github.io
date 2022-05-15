@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://www.reddit.com/r/dankinindia/comments/unyuvi/samajhne_wale_samhaj_gaye/?utm_source=share&utm_medium=web2x&context=3",
+            "request": "launch",
+            "url": "https://www.reddit.com/r/dankinindia/comments/unyuvi/samajhne_wale_samhaj_gaye/?utm_source=share&utm_medium=web2x&context=3"
+        }
+    ]
+}

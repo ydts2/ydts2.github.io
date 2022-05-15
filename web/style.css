@@ -8,9 +8,6 @@ html {
 }
 
 body {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   min-height: 100vh;
   margin: 0;
   background-color: #1E0555;
@@ -24,7 +21,7 @@ body, .quote-input {
 header {
   display: flex;
   /* font-family: 'Lobster', cursive; */
-   justify-content: space-between;
+  justify-content: space-between;
   align-items: center; 
   background-color: #b81e53;
   height: 60px;

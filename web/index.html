@@ -19,14 +19,20 @@
          <img class="logo-img" src="Amritalogo.png"> 
     </div>
     <div class="login-container">
-        <button type="button" class="btn btn-outline-warning"><a href="/web/signup/index.html">Sign Up</a></button>
-        <button type="button" class="btn btn-outline-warning"><a href="/web/signup/log.html">Login</a></button>
+        <button type="button" class="btn btn-outline-warning" onclick="location.href='/web/signup/index.html'">Sign Up</button>
+        <button type="button" class="btn btn-outline-warning" onclick="location.href='/web/signup/log.html'">Login</button>
     </div>
 </header>
   <div class="timer" id="timer"></div>
   <div class="container">
     <div class="quote-display" id="quoteDisplay"></div>
     <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+  </div>
+  <div id="my_box">
+  </div>
+  <button id="start" class="btn btn-success">Start</button>
+  <button id="stop" class="btn btn-danger" >Stop</button>
+  <button id="reset" class="btn btn-info" >Reset</button>
   </div>
 </body>
 </html>

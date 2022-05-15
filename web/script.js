@@ -45,17 +45,31 @@ async function renderNewQuote() {
   startTimer()
 }
 
-let startTime
+var time= 0;
+var myinterval= -1;
+
 function startTimer() {
-  timerElement.innerText = 0
-  startTime = new Date()
-  setInterval(() => {
-    timer.innerText = getTimerTime()
-  }, 1000)
+  myinterval=setInterval(function(){
+  time=time+1
+  timerElement.innerHTML=time
+},1000);
 }
 
-function getTimerTime() {
-  return Math.floor((new Date() - startTime) / 1000)
+function stopTimer()
+{
+  clearInterval(myinterval)
+  myinterval= -1;
+
 }
+function resetTimer()
+{
+  function myFn() {console.log('idle');}
+  var myTimer = setInterval(myFn, 4000);
+  clearInterval(myTimer);
+  myTimer = setInterval(myFn, 4000);
+}
+document.getElementById("start").addEventListener("click", startTimer);
+document.getElementById("stop").addEventListener("click", stopTimer);
+document.getElementById("reset").addEventListener("click", resetTimer);
 
 renderNewQuote()
