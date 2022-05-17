@@ -59,17 +59,10 @@ function stopTimer()
 {
   clearInterval(myinterval)
   myinterval= -1;
+  time=0;
 
-}
-function resetTimer()
-{
-  function myFn() {console.log('idle');}
-  var myTimer = setInterval(myFn, 4000);
-  clearInterval(myTimer);
-  myTimer = setInterval(myFn, 4000);
 }
 document.getElementById("start").addEventListener("click", startTimer);
 document.getElementById("stop").addEventListener("click", stopTimer);
-document.getElementById("reset").addEventListener("click", resetTimer);
 
 renderNewQuote()
