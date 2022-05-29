@@ -45,24 +45,17 @@ async function renderNewQuote() {
   startTimer()
 }
 
-var time= 0;
-var myinterval= -1;
-
+let startTime
 function startTimer() {
-  myinterval=setInterval(function(){
-  time=time+1
-  timerElement.innerHTML=time
-},1000);
+  timerElement.innerText = 0
+  startTime = new Date()
+  setInterval(() => {
+    timer.innerText = getTimerTime()
+  }, 1000)
 }
 
-function stopTimer()
-{
-  clearInterval(myinterval)
-  myinterval= -1;
-  time=0;
-
+function getTimerTime() {
+  return Math.floor((new Date() - startTime) / 1000)
 }
-document.getElementById("start").addEventListener("click", startTimer);
-document.getElementById("stop").addEventListener("click", stopTimer);
 
 renderNewQuote()
